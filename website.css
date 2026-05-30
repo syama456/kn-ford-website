@@ -777,9 +777,8 @@ section {
 }
 
 .testimonials-text {
-  margin-top: 0%;
-  background-color: #fff;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .testimonials-text h5 {
@@ -915,6 +914,8 @@ h4 {
   .row {
     grid-template-columns: repeat(2, 1fr);
   }
+
+
 }
 
 .blog-card {
