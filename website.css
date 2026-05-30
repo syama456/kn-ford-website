@@ -2,13 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-
-:root {
-  --bg: #34227e;
-  --wd: #FFd936;
-  --tx: #911b1b;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -95,6 +89,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin-top: 68px;
+  overflow-x: hidden;
 
 
 }
@@ -541,7 +536,7 @@ section {
   cursor: pointer;
 }
 
-/* active button */
+
 .tab-btn.active {
   background: rgb(64, 79, 212);
   color: white;
@@ -770,7 +765,7 @@ section {
   margin: 50px auto;
   display: flex;
   flex-direction: column;
-  overflow-x: auto;
+  overflow-x: hidden;
   background-color: #fff;
 
 
@@ -798,11 +793,9 @@ section {
 
 .testimonials-group {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 2rem;
-  animation: spin 60s infinite linear;
-  animation-duration: normal;
+  width: max-content;
+  animation: scroll 60s linear infinite;
 }
 
 .testimonials-col {
@@ -820,15 +813,16 @@ section {
   color: #1b6ec2
 }
 
-@keyframes spin {
-  from {
+@keyframes scroll {
+  0% {
     transform: translateX(0);
   }
 
-  to {
-    transform: translateX(-100%);
+  100% {
+    transform: translateX(-50%);
   }
 }
+
 
 .user-info {
   display: flex;
